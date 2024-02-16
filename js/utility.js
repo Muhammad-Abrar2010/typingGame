@@ -17,8 +17,10 @@ function getRandomAlphabets() {
   return alphabet;
 }
 
-function showRandomLetter() {
+function showRandomLetter(event) {
   const changeTheLetter = document.getElementById("rndmAlphabet");
   const changedLetter = (changeTheLetter.innerText = getRandomAlphabets());
   console.log(changedLetter);
 }
+
+document.addEventListener('keyup', showRandomLetter)
