@@ -11,17 +11,17 @@
         class="min-h-screen bg-no-repeat bg-center bg-[url(images/background.png)]"
       >
         <!-- Play Now -->
-        <div class="flex flex-col justify-center py-[250px] hidden">
+        <div class="flex flex-col justify-center py-[250px]" id="play">
           <h1 class="font-bold text-center text-4xl">ALPHABET CLASH</h1>
           <p class="text-center">
             Unleash Your Keyboard Kung Fu : Press “Enter” to Play
           </p>
-          <button class="btn btn-primary w-[80px] h-[243px] place-self-center">
+          <button onclick="play()" class="btn btn-primary w-[80px] h-[243px] place-self-center">
             Play Now
           </button>
         </div>
         <!-- Main Game -->
-        <div class="flex flex-col py-12 hidden">
+        <div class="flex flex-col py-12 hidden" id="mainGame">
           <div
             class="artboard artboard-horizontal phone-5 bg-[#ffffffb3] rounded-md border-solid border-[20px] border-[#010313cc] place-self-center"
           >
@@ -81,7 +81,7 @@
         </div>
 
         <!-- Game Over -->
-        <div class="flex justify-center items-center h-full py-[10%]"><div class="card w-96 bg-base-100 shadow-xl text-white">
+        <div class="flex justify-center items-center h-full py-[10%] hidden"><div class="card w-96 bg-base-100 shadow-xl text-white">
           <div class="card-body">
             <h2 class="card-title"><span>Score 14</span></h2>
             <button class="btn btn-primary">Play Again</button>
@@ -99,5 +99,6 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/alpha-clash.js"></script>
   </body>
 </html>
