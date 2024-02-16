@@ -8,6 +8,7 @@ function showElementById(elementId) {
   element.classList.remove("hidden");
 }
 
+
 function getRandomAlphabets() {
   const alphabetString = "abcdefghijklmnopqrstuvwxyz";
   const randomLetter = alphabetString.split("");
@@ -17,10 +18,28 @@ function getRandomAlphabets() {
   return alphabet;
 }
 
-function showRandomLetter(event) {
-  const changeTheLetter = document.getElementById("rndmAlphabet");
-  const changedLetter = (changeTheLetter.innerText = getRandomAlphabets());
-  console.log(changedLetter);
+
+function bgColor(elementId){
+  const element = document.getElementById(elementId)
+  // element.classList.remove('bg-gray-700')
+  element.classList.add('bg-yellow-800')
+
 }
 
-document.addEventListener('keyup', showRandomLetter)
+function keyUp(){
+  console.log('i am pressed, impressed')
+}
+
+
+document.addEventListener('keyup',keyUp())
+// function showRandomLetter(event) {
+
+//   const pressed = event.key;
+//   const changeTheLetter = document.getElementById("rndmAlphabet");
+
+//   const changedLetter = (changeTheLetter.innerText = getRandomAlphabets());
+
+// }
+
+// document.addEventListener("keyup", showRandomLetter);
+

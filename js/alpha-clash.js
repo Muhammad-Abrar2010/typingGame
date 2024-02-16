@@ -5,15 +5,17 @@
 //   mainGame.classList.remove("hidden")
 // }
 
-function continueGame(){
-    const alphabet = getRandomAlphabets();
-    console.log(alphabet);
+function continueGame() {
+  const randomAlphabets = getRandomAlphabets();
+  const currentAlphabets = document.getElementById("rndmAlphabet");
+  currentAlphabets.innerText = randomAlphabets;
+  console.log(currentAlphabets.innerText);
+
+  bgColor(randomAlphabets)
 }
 
-function play(){
-    hideElementById("play");
-    showElementById("mainGame");
-    continueGame();
+function play() {
+  hideElementById("play");
+  showElementById("mainGame");
+  continueGame();
 }
-
-
