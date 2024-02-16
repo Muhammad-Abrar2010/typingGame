@@ -16,3 +16,9 @@ function getRandomAlphabets() {
   const alphabet = randomLetter[randomIndex];
   return alphabet;
 }
+
+function showRandomLetter() {
+  const changeTheLetter = document.getElementById("rndmAlphabet");
+  const changedLetter = (changeTheLetter.innerText = getRandomAlphabets());
+  console.log(changedLetter);
+}
