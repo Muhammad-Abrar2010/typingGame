@@ -1,26 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div>
-            <!-- Play Now -->
-            <div>
-                <h1>ALPHABET CLASH</h1>
+      <div
+        class="min-h-screen bg-no-repeat bg-center bg-[url(images/background.png)] h-full"
+      >
+        <!-- Play Now -->
+        <div class="flex flex-col justify-center py-[250px] hidden">
+          <h1 class="font-bold text-center text-4xl">ALPHABET CLASH</h1>
+          <p class="text-center">
+            Unleash Your Keyboard Kung Fu : Press “Enter” to Play
+          </p>
+          <button class="btn btn-primary w-[80px] h-[243px] place-self-center">
+            Play Now
+          </button>
+        </div>
+        <!-- Main Game -->
+        <div class="flex flex-col py-12 ">
+            
+          <div
+            class="artboard artboard-horizontal phone-5 bg-[#ffffffb3] rounded-md border-solid border-[20px] border-[#010313cc] place-self-center"
+          >
+         <div class="flex justify-center m-5"> <p><span class="text-white font-semibold rounded-b-xl bg-[#010313cc] p-6">Don't watch keyboard  while playing...</span></p></div>
+            <div class="flex justify-center h-full items-center"><span class="text-8xl text-center font-bold text-black justify-center py-[100px]">Y</span></div>
+          </div>
+          <div class="py-4">
+            <div class="flex justify-center gap-1 my-1 w-full">
+              <kbd class="kbd"><span id="q">q</span></kbd>
+              <kbd class="kbd"><span id="w">w</span></kbd>
+              <kbd class="kbd"><span id="e">e</span></kbd>
+              <kbd class="kbd"><span id="r">r</span></kbd>
+              <kbd class="kbd"><span id="t">t</span></kbd>
+              <kbd class="kbd"><span id="y">y</span></kbd>
+              <kbd class="kbd"><span id="u">u</span></kbd>
+              <kbd class="kbd"><span id="i">i</span></kbd>
+              <kbd class="kbd"><span id="o">o</span></kbd>
+              <kbd class="kbd bg-orange-700"><span id="p">p</span></kbd>
             </div>
-            <!-- Main Game -->
-            <div></div>
-            <!-- Game Over -->
-            <div></div>
+            <div class="flex justify-center gap-1 my-1 w-full">
+              <kbd class="kbd"><span id="a">a</span></kbd>
+              <kbd class="kbd"><span id="s">s</span></kbd>
+              <kbd class="kbd"><span id="d">d</span></kbd>
+              <kbd class="kbd"><span id="f">f</span></kbd>
+              <kbd class="kbd"><span id="g">g</span></kbd>
+              <kbd class="kbd"><span id="h">h</span></kbd>
+              <kbd class="kbd"><span id="j">j</span></kbd>
+              <kbd class="kbd"><span id="k">k</span></kbd>
+              <kbd class="kbd"><span id="l">l</span></kbd>
+            </div>
+            <div class="flex justify-center gap-1 my-1 w-full">
+              <kbd class="kbd"><span id="z">z</span></kbd>
+              <kbd class="kbd"><span id="x">x</span></kbd>
+              <kbd class="kbd"><span id="c">c</span></kbd>
+              <kbd class="kbd"><span id="v">v</span></kbd>
+              <kbd class="kbd"><span id="b">b</span></kbd>
+              <kbd class="kbd"><span id="n">n</span></kbd>
+              <kbd class="kbd"><span id="m">m</span></kbd>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between px-12 py-[-16px]">
+          <button class="btn btn-primary">Lives<span>1</span></button>
+          <button class="btn btn-primary">Score<span>1</span></button>
+
+
         </div>
 
+        <!-- Game Over -->
+        <div></div>
+      </div>
     </main>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-    
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
 </html>
