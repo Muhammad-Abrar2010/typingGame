@@ -8,7 +8,7 @@
   <body>
     <main>
       <div
-        class="min-h-screen bg-no-repeat bg-center bg-[url(images/background.png)] h-full"
+        class="min-h-screen bg-no-repeat bg-center bg-[url(images/background.png)]"
       >
         <!-- Play Now -->
         <div class="flex flex-col justify-center py-[250px] hidden">
@@ -21,13 +21,24 @@
           </button>
         </div>
         <!-- Main Game -->
-        <div class="flex flex-col py-12 ">
-            
+        <div class="flex flex-col py-12 hidden">
           <div
             class="artboard artboard-horizontal phone-5 bg-[#ffffffb3] rounded-md border-solid border-[20px] border-[#010313cc] place-self-center"
           >
-         <div class="flex justify-center m-5"> <p><span class="text-white font-semibold rounded-b-xl bg-[#010313cc] p-6">Don't watch keyboard  while playing...</span></p></div>
-            <div class="flex justify-center h-full items-center"><span class="text-8xl text-center font-bold text-black justify-center py-[100px]">Y</span></div>
+            <div class="flex justify-center m-5">
+              <p>
+                <span
+                  class="text-white font-semibold rounded-b-xl bg-[#010313cc] p-6"
+                  >Don't watch keyboard while playing...</span
+                >
+              </p>
+            </div>
+            <div class="flex justify-center h-full items-center">
+              <span
+                class="text-8xl text-center font-bold text-black justify-center py-[100px]"
+                >Y</span
+              >
+            </div>
           </div>
           <div class="py-4">
             <div class="flex justify-center gap-1 my-1 w-full">
@@ -63,16 +74,23 @@
               <kbd class="kbd"><span id="m">m</span></kbd>
             </div>
           </div>
-        </div>
-        <div class="flex justify-between px-12 py-[-16px]">
-          <button class="btn btn-primary">Lives<span>1</span></button>
-          <button class="btn btn-primary">Score<span>1</span></button>
-
-
+          <div class="flex justify-between px-12 py-[-16px]">
+            <button class="btn btn-primary">Lives<span>1</span></button>
+            <button class="btn btn-primary">Score<span>1</span></button>
+          </div>
         </div>
 
         <!-- Game Over -->
-        <div></div>
+        <div class="flex justify-center items-center h-full py-[10%]"><div class="card w-96 bg-base-100 shadow-xl text-white">
+          <div class="card-body">
+            <h2 class="card-title"><span>Score 14</span></h2>
+            <button class="btn btn-primary">Play Again</button>
+            <p>Practice will make you Pro</p>
+            <div class="card-actions justify-end">
+              
+            </div>
+          </div>
+        </div></div>
       </div>
     </main>
     <link
