@@ -19,19 +19,29 @@ function getRandomAlphabets() {
 }
 
 
-function bgColor(elementId){
+function bgColorAdd(elementId){
   const element = document.getElementById(elementId)
   // element.classList.remove('bg-gray-700')
   element.classList.add('bg-yellow-800')
 
 }
+function bgColorRemove(elementId){
+  const element = document.getElementById(elementId)
+  // element.classList.remove('bg-gray-700')
+  element.classList.remove('bg-yellow-800')
 
-function keyUp(){
-  console.log('i am pressed, impressed')
 }
 
+// function keyUp(e){
+//   const playerPressed = e.key;
+//   console.log('player pressed',playerPressed);
+//   console.log(currentAlphabets.innerText);
 
-document.addEventListener('keyup',keyUp())
+  
+// }
+
+
+document.addEventListener('keyup',keyUp)
 // function showRandomLetter(event) {
 
 //   const pressed = event.key;
